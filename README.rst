@@ -9,10 +9,9 @@ Installation
 
 Add `colorfield` to your `INSTALLED_APPS`.
 
-```python
+Then in your models, you can use it like this:
 
-Then in your models, you can use it like this::
-
+.. code-block:: python
 
     from django.db import models
     from colorfield.fields import ColorField
@@ -20,12 +19,12 @@ Then in your models, you can use it like this::
     class Show(ExtendedModel):
         title = models.CharField(u'Title', max_length=250)
         color = ColorField(default='ffffff')
-```
-
-And an example for the admin::
 
 
-```python
+And an example for the admin:
+
+.. code-block:: python
+
     from django.contrib import admin
     from models import Show
     
@@ -34,4 +33,3 @@ And an example for the admin::
         list_editable = ('color',)
         
     admin.site.register(Show, ShowAdmin)
-```
