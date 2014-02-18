@@ -1,18 +1,24 @@
 .color-picker-preview {
     border:1px solid #ccc;
     height:23px;
-    left:122px;
-    position:absolute;
-    top:0;
     width:23px;
-    -moz-border-radius:4px;
+    border-radius:3px;
+    -moz-border-radius:3px;
+    float:left;
+    display: inline-block;
+    margin-right: 3px;
+}
+td > .color-picker-preview {
+    margin-top: -5px !important;
+    margin-bottom: -5px !important;
 }
 .color-picker-preview div {
     height:19px;
     left:2px;
-    position:absolute;
+    position:relative;
     top:2px;
     width:19px;
+    border-radius:2px;
     -moz-border-radius:2px;
 }
 .colorpicker {
