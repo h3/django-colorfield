@@ -13,6 +13,7 @@ Add `colorfield` to your `INSTALLED_APPS`.
 
 Then in your models, you can use it like this::
 
+
     from django.db import models
     from colorfield.fields import ColorField
 
